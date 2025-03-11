@@ -324,8 +324,5 @@ defaults:
       read_time: true
       comments:
         provider: "utterances"
-        utterances:
-          issue_term: "title"  # 댓글을 구분하는 기준 (URL 기준)
-          label: "comment"  # GitHub Issue에 자동으로 붙는 라벨
       share: true
       related: true
