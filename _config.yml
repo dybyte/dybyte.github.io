@@ -23,7 +23,7 @@ future                   : true
 published                : true
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "dy102"
-description              : "An amazing website."
+description              : "My Dev Study Notes"
 url                      : "https://dy102.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
