@@ -21,7 +21,7 @@ title                    : "dy102 blog"
 title_separator          : "-"
 future                   : true
 published                : true
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "My Dev Study Notes"
 name                     : "dy102"
 description              : "My Dev Study Notes"
 url                      : "https://dy102.github.io"
