@@ -58,6 +58,14 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
         {% include page__date.html %}
+        <script src="https://utteranc.es/client.js"
+                repo="dy102/dy102.github.io"
+                issue-term="pathname"
+                label="comment"
+                theme="dark-blue"
+                crossorigin="anonymous"
+                async>
+        </script>
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
@@ -76,15 +84,6 @@ layout: default
       {% endif %}
     {% endif %}
   </article>
-
-  <script src="https://utteranc.es/client.js"
-          repo="dy102/dy102.github.io"
-          issue-term="pathname"
-          label="comment"
-          theme="dark-blue"
-          crossorigin="anonymous"
-          async>
-  </script>
 
   {% if page.id and page.related and site.related_posts.size > 0 %}
     {% include page__related.html posts=site.related_posts %}
