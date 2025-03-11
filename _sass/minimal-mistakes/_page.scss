@@ -380,7 +380,7 @@ body {
 }
 
 .taxonomy__index {
-  display: grid;
+  display: flex;
   grid-column-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
   margin: 1.414em 0;
