@@ -4,12 +4,19 @@
 <!doctype html>
 {% include copyright.html %}
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<head>
+  <!-- 사이트 이름과 설명 추가 -->
+  <meta name="description" content="{{ site.description | default: "Your default site description here" }}">
+  <meta name="author" content="{{ site.name | default: "Your site name here" }}">
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+  <title>{{ site.name | default: "Your site name here" }}</title>
+
+  {% include head.html %}
+  {% include head/custom.html %}
+</head>
+
+
+<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
