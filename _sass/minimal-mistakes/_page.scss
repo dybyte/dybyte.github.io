@@ -94,7 +94,7 @@ body {
 			position: relative;
 			inset-inline-start: 0.5em;
 			opacity: 0;
-			font-size: 0.6em;
+			font-size: 0.4em;
 			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
 			-moz-transition: opacity 0.2s ease-in-out 0.1s;
 			-o-transition: opacity 0.2s ease-in-out 0.1s;
@@ -138,7 +138,7 @@ body {
   :not(pre) > code {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    font-size: 0.6em;
+    font-size: 0.4em;
     background: $code-background-color;
     border-radius: $border-radius;
 
