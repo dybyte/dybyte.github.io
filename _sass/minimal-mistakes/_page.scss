@@ -79,8 +79,8 @@ body {
 }
 
 .page__lead {
-  font-family: 'Helvetica', sans-serif;
-  font-size: $type-size-6;
+  font-family: $global-font-family;
+  font-size: $type-size-8;
 }
 
 .page__content {
