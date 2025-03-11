@@ -116,7 +116,7 @@ analytics:
 # Site Author
 author:
   name             : "dy102"
-  avatar           : "/assets/images/echo.jpg"
+  avatar           : "/assets/images/echo.png"
   bio              : "backend developer"
   location         : "Korea"
   email            :
