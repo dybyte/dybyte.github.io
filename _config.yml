@@ -324,9 +324,5 @@ defaults:
       read_time: true
       comments:
         provider: "utterances"
-        utterances:
-          repo: "dy102/dy102.github.io"
-          issue_term: "pathname"
-          label: "comment"
       share: true
       related: true
