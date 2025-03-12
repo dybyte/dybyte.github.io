@@ -227,7 +227,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 toc: true
-toc_sticky: true
 # Sass/SCSS
 sass:
   sass_dir: _sass
