@@ -219,7 +219,13 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
+plugins:
+  - jekyll-toc
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -258,12 +264,6 @@ pagination:
 
 
 # Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
