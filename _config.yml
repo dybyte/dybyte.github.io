@@ -325,3 +325,6 @@ defaults:
         provider: "utterances"
       share: true
       related: true
+collections:
+  posts:
+    output: true # 포스트 목차 설정
