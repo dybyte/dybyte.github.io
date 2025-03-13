@@ -326,6 +326,10 @@ body {
 .page__taxonomy {
   .sep {
     display: block;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 10;
   }
 
   strong {
@@ -341,7 +345,6 @@ body {
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
-  position: sticky;
 
   &:hover {
     text-decoration: none;
