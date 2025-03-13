@@ -349,11 +349,6 @@ body {
 }
 
 .taxonomy__section {
-  position: sticky;
-  top: 0;
-  right: 0;
-  z-index: 10;
-
   margin-bottom: 2em;
   padding-bottom: 1em;
 
@@ -392,6 +387,12 @@ body {
   padding: 0;
   font-size: 1em;
   list-style: none;
+
+  /* 우측 고정 */
+  position: sticky;
+  top: 20px; /* 스크롤 시 상단에서 떨어진 위치 */
+  right: 0; /* 우측에 고정 */
+  max-height: 100vh; /* 화면의 높이를 넘지 않도록 제한 */
 
   @include breakpoint($large) {
     grid-template-columns: repeat(3, 1fr);
