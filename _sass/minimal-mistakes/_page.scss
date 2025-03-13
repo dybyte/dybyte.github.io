@@ -325,7 +325,7 @@ body {
 
 .page__taxonomy {
   .sep {
-    display: block;
+    display: none;
   }
 
   strong {
@@ -390,7 +390,6 @@ body {
 
   /* 우측 고정 */
   position: sticky;
-  top: 20px; /* 스크롤 시 상단에서 떨어진 위치 */
   right: 0; /* 우측에 고정 */
   max-height: 100vh; /* 화면의 높이를 넘지 않도록 제한 */
 
