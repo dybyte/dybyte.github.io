@@ -352,6 +352,11 @@ body {
   margin-bottom: 2em;
   padding-bottom: 1em;
 
+  /* 우측 고정 */
+  position: sticky;
+  right: 0; /* 우측에 고정 */
+  max-height: 100vh; /* 화면의 높이를 넘지 않도록 제한 */
+
   &:not(:last-child) {
     border-bottom: solid 1px $border-color;
   }
@@ -387,11 +392,6 @@ body {
   padding: 0;
   font-size: 1em;
   list-style: none;
-
-  /* 우측 고정 */
-  position: sticky;
-  right: 0; /* 우측에 고정 */
-  max-height: 100vh; /* 화면의 높이를 넘지 않도록 제한 */
 
   @include breakpoint($large) {
     grid-template-columns: repeat(3, 1fr);
