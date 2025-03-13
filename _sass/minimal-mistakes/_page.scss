@@ -326,10 +326,6 @@ body {
 .page__taxonomy {
   .sep {
     display: block;
-    position: sticky;
-    top: 0;
-    right: 0;
-    z-index: 10;
   }
 
   strong {
@@ -338,6 +334,11 @@ body {
 }
 
 .page__taxonomy-item {
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
   display: inline-block;
   margin-inline-end: 5px;
   margin-bottom: 8px;
