@@ -36,8 +36,8 @@ In the context of the Tunnel SDK, a **block** is a unit of data written to MaxCo
   session.commit(new Long[] {0L});
   ```
 
-  ```java
-  // TableTunnel.UploadSession.java
+ ```java
+// TableTunnel.UploadSession.java
   private RecordWriter openRecordWriterInternal(long blockId, CompressOption compress, long blockVersion) throws TunnelException {
     TunnelRetryHandler retryHandler = new TunnelRetryHandler(this.conf);
 
@@ -72,6 +72,7 @@ In the context of the Tunnel SDK, a **block** is a unit of data written to MaxCo
         throw new TunnelException(e.getMessage(), e);
     }
 }
+```
 
 An upload session opens a new RecordWriter for a specific block ID provided manually.
 
