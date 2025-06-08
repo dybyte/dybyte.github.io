@@ -173,3 +173,7 @@ The SDK already knows which blocks were uploaded, and performs the finalization 
 Both TunnelBufferedWriter and TunnelRecordWriter serve valid use cases, but understanding their differences in block management and thread safety is key to choosing the right tool.
 
 If you're building a scalable data pipeline or handling concurrent writes, prefer TunnelBufferedWriter. For single-threaded or fine-grained control, TunnelRecordWriter gives you more flexibility—at the cost of more responsibility.
+
+## Reference
+- https://github.com/aliyun/aliyun-odps-java-sdk/blob/release/0.51.x/docs/docs/api-reference/tunnel/UploadSession.md
+- https://github.com/apache/seatunnel/pull/9089
