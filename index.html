@@ -5,64 +5,66 @@ author_profile: false
 classes: wide
 ---
 
-<section class="revamp-hero">
-  <p class="revamp-hero__eyebrow">dybyte blog</p>
-  <h1 class="revamp-hero__title">Build Better, Write Clearer.</h1>
-  <p class="revamp-hero__desc">Backend · Data Engineering · Problem Solving Notes</p>
-  <div class="revamp-hero__actions">
-    <a class="btn btn--primary" href="{{ '/search/' | relative_url }}">Search Posts</a>
-    <a class="btn btn--light-outline" href="{{ '/categories/' | relative_url }}">Browse Categories</a>
-  </div>
-</section>
+<div class="revamp-shell">
+  <section class="revamp-hero">
+    <p class="revamp-hero__eyebrow">dybyte blog</p>
+    <h1 class="revamp-hero__title">dybyte's Private Engineering Notes</h1>
+    <p class="revamp-hero__desc">Apache SeaTunnel Committer · Distributed Systems · Data Engineering Pipelines</p>
+    <div class="revamp-hero__actions">
+      <a class="btn btn--primary" href="{{ '/search/' | relative_url }}">Search Posts</a>
+      <a class="btn btn--light-outline" href="{{ '/categories/' | relative_url }}">Browse Categories</a>
+    </div>
+  </section>
 
-<section class="revamp-section">
-  <div class="revamp-section__head">
-    <h2>Quick Explore</h2>
-  </div>
-  <div class="quick-grid">
-    <a class="quick-card" href="{{ '/categories/' | relative_url }}">
-      <h3>Categories</h3>
-      <p>Explore posts by topic clusters.</p>
-    </a>
-    <a class="quick-card" href="{{ '/tags/' | relative_url }}">
-      <h3>Tags</h3>
-      <p>Jump with granular keywords.</p>
-    </a>
-    <a class="quick-card" href="{{ '/search/' | relative_url }}">
-      <h3>Search</h3>
-      <p>Find posts instantly with keywords.</p>
-    </a>
-    <a class="quick-card" href="{{ '/about/' | relative_url }}">
-      <h3>About</h3>
-      <p>Get context about this blog and author.</p>
-    </a>
-  </div>
-</section>
+  <section class="revamp-section">
+    <div class="revamp-section__head">
+      <h2>Quick Explore</h2>
+    </div>
+    <div class="quick-grid">
+      <a class="quick-card" href="{{ '/categories/' | relative_url }}">
+        <h3>Categories</h3>
+        <p>Explore posts by topic clusters.</p>
+      </a>
+      <a class="quick-card" href="{{ '/tags/' | relative_url }}">
+        <h3>Tags</h3>
+        <p>Jump with granular keywords.</p>
+      </a>
+      <a class="quick-card" href="{{ '/search/' | relative_url }}">
+        <h3>Search</h3>
+        <p>Find posts instantly with keywords.</p>
+      </a>
+      <a class="quick-card" href="{{ '/about/' | relative_url }}">
+        <h3>About</h3>
+        <p>Get context about this blog and author.</p>
+      </a>
+    </div>
+  </section>
 
-<section class="revamp-section">
-  <div class="revamp-section__head">
-    <h2>Recent Posts</h2>
-    <a href="{{ '/categories/' | relative_url }}">View all →</a>
-  </div>
-  <div class="post-grid">
-    {% for post in site.posts limit:6 %}
-      <article class="post-card">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p class="post-card__meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.categories[0] %} · {{ post.categories[0] }}{% endif %}</p>
-        {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 110 }}</p>{% endif %}
-      </article>
-    {% endfor %}
-  </div>
-</section>
+  <section class="revamp-section">
+    <div class="revamp-section__head">
+      <h2>Recent Posts</h2>
+      <a href="{{ '/categories/' | relative_url }}">View all →</a>
+    </div>
+    <div class="post-grid">
+      {% for post in site.posts limit:6 %}
+        <article class="post-card">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="post-card__meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.categories[0] %} · {{ post.categories[0] }}{% endif %}</p>
+          {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 110 }}</p>{% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 
-<section class="revamp-section">
-  <div class="revamp-section__head">
-    <h2>Top Categories</h2>
-  </div>
-  <div class="category-chips">
-    {% assign sorted_categories = site.categories | sort %}
-    {% for category in sorted_categories limit:10 %}
-      <a class="chip" href="{{ '/categories/#' | append: category[0] | slugify | relative_url }}"># {{ category[0] }} <span>{{ category[1].size }}</span></a>
-    {% endfor %}
-  </div>
-</section>
+  <section class="revamp-section">
+    <div class="revamp-section__head">
+      <h2>Top Categories</h2>
+    </div>
+    <div class="category-chips">
+      {% assign sorted_categories = site.categories | sort %}
+      {% for category in sorted_categories limit:10 %}
+        <a class="chip" href="{{ '/categories/#' | append: category[0] | slugify | relative_url }}"># {{ category[0] }} <span>{{ category[1].size }}</span></a>
+      {% endfor %}
+    </div>
+  </section>
+</div>
